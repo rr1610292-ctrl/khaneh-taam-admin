@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100b0b">
+<meta name="description" content="منوی دیجیتال خانهٔ طعم؛ روایت معاصر از آشپزی ایرانی">
+<title>خانهٔ طعم — سفره‌ای با امضای امروز</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announcement"><span>✳</span> تجربه‌ای تازه از طعم‌های ریشه‌دار ایرانی <span class="announce-side">منوی نمونه · قیمت‌ها نمایشی هستند</span></div>
+<header class="topbar">
+  <button class="mobile-menu" id="mobileMenu" aria-label="راهنمای منو">☰</button>
+  <a class="brand" href="#" aria-label="خانه طعم"><span class="brand-symbol">✳</span><span><b>خانهٔ طعم</b><small>سفره‌ای با امضای امروز</small></span></a>
+  <nav class="nav"><a href="#menu">منوی غذا</a><a href="#signature">امضای آشپزخانه</a><a href="#philosophy">فلسفهٔ ما</a></nav>
+  <button class="cart-button" id="openCart"><span class="cart-icon">♧</span><span>سفارش شما</span><b id="cartCount">۰</b></button>
+</header>
+<main>
+<section class="hero">
+ <div class="hero-backdrop"></div><div class="hero-copy">
+  <div class="kicker"><span></span> آشپزی ایرانی · با نگاهی معاصر</div>
+  <h1>طعمِ ریشه‌ها،<br><em>با جسارتِ امروز.</em></h1>
+  <p>از عطر برنج زعفرانی تا آتشِ گریل؛ مزه‌هایی آشنا با روایتی تازه، برای لحظه‌هایی که ارزش به‌خاطر سپردن دارند.</p>
+  <div class="hero-actions"><a class="button button-gold" href="#menu">کشف منو <span>↙</span></a><a class="text-link" href="#signature">با انتخاب آشپزخانه آشنا شو <span>←</span></a></div>
+  <div class="hero-meta"><span><b>۰۱</b> اصالت در مواد اولیه</span><i></i><span><b>۰۲</b> ظرافت در اجرا</span></div>
+ </div>
+ <div class="hero-visual">
+  <div class="hero-photo"></div><div class="photo-shade"></div>
+  <div class="vertical-caption">IRANIAN CUISINE <span>✳</span> MODERN TABLE</div>
+  <div class="hero-seal"><span>THE ART OF</span><b>میزِ ایرانی</b><span>✳ &nbsp; EST. TODAY</span></div>
+  <div class="photo-index"><span>01</span><i></i><span>03</span></div>
+ </div>
+ <div class="hero-bottom-note"><span>✳</span> هر غذا، قصه‌ای برای گفتن دارد.</div>
+</section>
+<section class="signature" id="signature">
+ <div class="signature-title"><span class="section-kicker">انتخابِ میزبان</span><h2>پیشنهادِ <em>امروز</em></h2><p>یک انتخاب ویژه از میان طعم‌هایی که دوستشان داریم.</p></div>
+ <div class="signature-image"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=85" alt="غذای ایرانی با برنج زعفرانی" loading="lazy"><span class="image-label">HOUSE SELECTION · 01</span></div>
+ <div class="signature-copy"><span class="gold-line"></span><span class="section-kicker">پیشنهاد آشپزخانه</span><h3>خاطره‌ای<br>روی یک بشقاب.</h3><p>انتخابی برای کسانی که به عطر زعفران، برنج ایرانی و مزه‌های عمیق وفادارند؛ ساده، اصیل و به‌یادماندنی.</p><button class="outline-button" id="featuredAdd">افزودن پیشنهاد به سبد <span>＋</span></button></div>
+</section>
+<section class="menu-section" id="menu">
+ <div class="menu-heading"><div><span class="section-kicker">از سفرهٔ ما انتخاب کن</span><h2>منوی <em>خانهٔ طعم</em></h2></div><p>طعم‌های آشنا، با جزئیاتی تازه.</p></div>
+ <div class="menu-controls"><div class="category-list" id="categories"><button class="category active" data-category="همه">همهٔ منو <span>۳۹</span></button><button class="category" data-category="غذای اصلی">غذاهای اصلی</button><button class="category" data-category="کباب">کباب و گریل</button><button class="category" data-category="پیش‌غذا">پیش‌غذا</button><button class="category" data-category="سالاد و مخلفات">سالاد و مخلفات</button><button class="category" data-category="نوشیدنی">نوشیدنی</button><button class="category" data-category="دسر">دسر</button></div>
+ <div class="tools"><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="نام غذا را جست‌وجو کن..." aria-label="جستجوی غذا"></label><select id="sortSelect" aria-label="مرتب‌سازی"><option value="featured">چینش پیشنهادی</option><option value="low">قیمت: کم به زیاد</option><option value="high">قیمت: زیاد به کم</option></select></div></div>
+ <div class="results-line"><span id="resultsCount">۳۹ انتخاب برای تو</span><span>قیمت‌ها به تومان</span></div>
+ <div class="dish-grid" id="dishGrid" aria-live="polite"></div>
+</section>
+<section class="philosophy" id="philosophy"><div class="philosophy-mark">✳</div><span class="section-kicker">فلسفهٔ خانهٔ طعم</span><h2>به ریشه‌ها وفادار؛<br><em>به تجربه‌ها گشوده.</em></h2><p>برای ما، غذای خوب از احترام شروع می‌شود؛ احترام به مواد اولیه، به دست‌های آشپز و به آدم‌هایی که دور یک میز جمع می‌شوند.</p><a href="#menu">یک طعم انتخاب کن <span>←</span></a><div class="philosophy-side">GOOD FOOD · GOOD COMPANY</div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-symbol">✳</span><span><b>خانهٔ طعم</b><small>سفره‌ای با امضای امروز</small></span></a><span class="footer-motto">اصالت طعم، نگاه امروز.</span><span class="footer-note">منوی نمایشی · سفارش واقعی غیرفعال است</span><button class="admin-open" id="openAdmin">مدیریت منو ⚙</button></footer>
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="سبد سفارش" aria-hidden="true"><div class="cart-head"><div><span class="section-kicker">انتخاب‌های شما</span><h2>سبد سفارش</h2></div><button class="close" id="closeCart" aria-label="بستن سبد">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-foot"><div class="total"><span>جمع سفارش</span><strong id="cartTotal">۰ تومان</strong></div><button class="button button-gold checkout" id="checkout">ادامهٔ سفارش <span>←</span></button><small>نسخهٔ نمایشی؛ پرداخت یا ارسال سفارش انجام نمی‌شود.</small></div></aside>
+<div class="admin-panel" id="adminPanel"><div class="admin-head"><div><span class="section-kicker">مدیریت مجموعه</span><h2>مدیریت منوی خانهٔ طعم</h2><small id="adminCount">۳۹ آیتم</small></div><button class="close" id="closeAdmin">×</button></div><div class="admin-notice">تغییرات در همین مرورگر ذخیره می‌شوند. برای انتشار عمومی، خروجی JSON را به‌روزرسانی و روی GitHub منتشر کن. این پنل ورود امن یا ذخیره‌سازی ابری ندارد.</div><div class="admin-toolbar"><button class="button button-gold" id="addDish">＋ افزودن آیتم</button><button id="exportMenu">خروجی JSON</button><label class="import-label">ورود JSON<input type="file" id="importMenu" accept="application/json"></label></div><div class="admin-rows" id="adminRows"></div><div class="dish-editor" id="dishEditor"><form id="dishForm"><h3>اطلاعات آیتم</h3><input type="hidden" id="dishId"><label>نام غذا<input id="dishName" required></label><label>دسته‌بندی<select id="dishCategory"><option>غذای اصلی</option><option>کباب</option><option>پیش‌غذا</option><option>سالاد و مخلفات</option><option>نوشیدنی</option><option>دسر</option></select></label><label>قیمت به تومان<input type="number" min="0" id="dishPrice" required></label><label>توضیحات<input id="dishDesc"></label><label>برچسب اختیاری<input id="dishTag"></label><label>آدرس عکس<input id="dishImage" placeholder="URL عکس یا مسیر فایل محلی"></label><div class="editor-actions"><button class="button button-gold" type="submit">ذخیره آیتم</button><button type="button" id="cancelDish">انصراف</button></div></form></div></div><div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
